@@ -14,6 +14,24 @@
 
 <body>
 
+    <br>
+    Json file
+    <input type="file" id="upload-json"><br>
+    Binary file
+    <input type="file" id="upload-weights"><br>
+    <input type="button" value="Cargar modelo" onclick="cargarModelo();" >
+    <br>
+
+    <input type="button" value="Ver Curva de inferencia" onclick="verCurvaInferencia();">
+    <br>
+
+
+    <input type="button" value="Detener entrenamiento" onclick="stopTraining=true;" />
+    <br>
+
+    <input type="button" value="Guardar modelo" onclick="guardarModelo();">
+    <br>
+
     <!-- Importar el archivo principal -->
     <script src="script.js"></script>
 </body>
