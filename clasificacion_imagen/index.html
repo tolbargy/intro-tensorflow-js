@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificacion de imagenes</title>
+</head>
+
+<body>
+
+    <img crossOrigin='anonymous' id="img" src="https://picsum.photos/200/300?random=1" width="227" height="227">
+
+    <button onclick="cambiarImagen();">Cambiar Imagen</button>
+
+
+    <div id="descripcion_imagen"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
