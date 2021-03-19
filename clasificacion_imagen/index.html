@@ -10,14 +10,23 @@
 
 <body>
 
-    <img crossOrigin='anonymous' id="img" src="https://picsum.photos/200/300?random=1" width="227" height="227">
+    <div>
+        <h5>Imagen a predecir:</h5>
+        <img crossOrigin='anonymous' id="img" src="https://picsum.photos/200/300?random=1" width="227" height="227">
+        <button onclick="cambiarImagen();">Cambiar Imagen</button>
+        <strong>Prediccion:</strong>
+        <div id="descripcion_imagen"></div>
+    </div>
 
-    <button onclick="cambiarImagen();">Cambiar Imagen</button>
+    <br>
+    <hr>
+    <br>
 
-
-    <div id="descripcion_imagen"></div>
-
-
+    <div>
+        <h5>Imagen en camara a predecir:</h5>
+        <video autoplay="" playsinline muted id="webcam" width="227" height="227"></video>
+        <div id="console"></div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
